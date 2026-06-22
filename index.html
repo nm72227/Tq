@@ -1,0 +1,583 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Touqas Foods - Good food, great living. Experience premium momos, burgers, loaded fries, artisan pizzas, and injected broast.">
+    <title>Touqas Foods | Good Food, Great Living</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="announcement-bar">
+        <div class="ticker-wrapper">
+            <div class="ticker-item"><i class="fa-solid fa-fire text-amber"></i> Free Drink on orders above PKR 1500</div>
+            <div class="ticker-item"><i class="fa-solid fa-cake-candles text-amber"></i> Birthday Discount for Membership Holders</div>
+            <div class="ticker-item"><i class="fa-solid fa-truck-fast text-amber"></i> Fast Home Delivery Available</div>
+            <div class="ticker-item"><i class="fa-solid fa-burger text-amber"></i> Buy 2 Burgers Get Fries Discount</div>
+            <div class="ticker-item"><i class="fa-solid fa-bowl-food text-amber"></i> Signature Momos Available Now</div>
+            <div class="ticker-item"><i class="fa-solid fa-star text-amber"></i> Join Touqas Membership for Exclusive Rewards</div>
+            <div class="ticker-item"><i class="fa-solid fa-fire text-amber"></i> Free Drink on orders above PKR 1500</div>
+            <div class="ticker-item"><i class="fa-solid fa-cake-candles text-amber"></i> Birthday Discount for Membership Holders</div>
+            <div class="ticker-item"><i class="fa-solid fa-truck-fast text-amber"></i> Fast Home Delivery Available</div>
+        </div>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-brand">
+                <div class="logo-placeholder">TF</div>
+                <div class="brand-text">
+                    <span class="brand-name">TOUQAS FOODS</span>
+                    <span class="brand-tagline">good food, great living</span>
+                </div>
+            </a>
+            
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#menu" class="nav-link">Menu</a></li>
+                <li><a href="#membership" class="nav-link">Membership</a></li>
+                <li><a href="#reviews" class="nav-link">Reviews</a></li>
+                <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                <li><a href="#services" class="nav-link">Services</a></li>
+                <li><a href="#story" class="nav-link">Our Story</a></li>
+                <li><a href="#upcoming-projects" class="nav-link">Future Expansion</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <button class="cart-trigger" id="cartTrigger" aria-label="Open Shopping Cart">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span class="cart-count" id="cartCount">0</span>
+                </button>
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle Mobile Menu">
+                    <i class="fa-solid fa-bars-staggered"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-content reveal">
+                <div class="promo-badge"><i class="fa-solid fa-crown"></i> Elite Fast-Food & Cafe Experience</div>
+                <h1 class="hero-title">Savor the Art of <span class="text-gradient">Premium Taste</span></h1>
+                <p class="hero-subtitle">From signature melt-in-your-mouth Momos to deep-flavored Injected Broasts, we curate ultimate comfort food crafted with culinary precision.</p>
+                <p class="hero-statement">Available for structural Dine-In, swift Takeaway, or rapid Doorstep Delivery across the city.</p>
+                <div class="hero-actions">
+                    <a href="#menu" class="btn btn-primary btn-lg">Explore Live Menu <i class="fa-solid fa-arrow-right"></i></a>
+                    <a href="#membership" class="btn btn-outline btn-lg">Join Premium Circle</a>
+                </div>
+                <div class="hero-features">
+                    <div class="h-feat"><i class="fa-solid fa-circle-check"></i> 100% Fresh & Hygienic</div>
+                    <div class="h-feat"><i class="fa-solid fa-bolt"></i> Delivery Under 35 Mins</div>
+                </div>
+            </div>
+            <div class="hero-image-wrapper reveal">
+                <div class="hero-image-overlay"></div>
+                <img src="placeholder-hero-food.jpg" alt="Touqas Premium Platter Mix" class="hero-main-img">
+                <div class="floating-badge badge-1">
+                    <i class="fa-solid fa-heart"></i>
+                    <div>
+                        <h4>Top Rated</h4>
+                        <p>★ 4.9 Food Index</p>
+                    </div>
+                </div>
+                <div class="floating-badge badge-2">
+                    <span class="badge-price">PKR 0</span>
+                    <p>Delivery on first order</p>
+                </div>
+            </div>
+        </div>
+        <div class="wave-divider"></div>
+    </section>
+
+    <section id="menu" class="menu-section">
+        <div class="section-header reveal">
+            <span class="section-subtitle">Freshly Prepared Collections</span>
+            <h2 class="section-title">Explore Our Premium Menu</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="category-tabs-container reveal">
+            <div class="category-tabs" id="categoryTabs">
+                <button class="tab-btn active" data-category="all">All Items</button>
+                <button class="tab-btn" data-category="momos">Signature Momos</button>
+                <button class="tab-btn" data-category="burgers">Premium Burgers</button>
+                <button class="tab-btn" data-category="fries">Loaded Fries</button>
+                <button class="tab-btn" data-category="pizza">Pizza Line</button>
+                <button class="tab-btn" data-category="broast">Injected Broast</button>
+                <button class="tab-btn" data-category="combos">Combo Deals</button>
+                <button class="tab-btn" data-category="drinks">Drinks</button>
+                <button class="tab-btn" data-category="upcoming">Upcoming Dishes</button>
+            </div>
+        </div>
+
+        <div class="menu-grid reveal" id="menuGrid">
+            </div>
+    </section>
+
+    <div class="cart-drawer-overlay" id="cartOverlay"></div>
+    <div class="cart-drawer" id="cartDrawer">
+        <div class="cart-header">
+            <h3><i class="fa-solid fa-bag-shopping"></i> Your Selected Feast</h3>
+            <button class="cart-close" id="cartClose"><i class="fa-solid fa-xmark"></i></button>
+        </div>
+        
+        <div class="cart-body">
+            <div class="cart-items-wrapper" id="cartItemsContainer">
+                </div>
+            
+            <div class="cart-summary-box">
+                <div class="summary-row">
+                    <span>Subtotal</span>
+                    <span id="cartSubtotal">PKR 0</span>
+                </div>
+                <div class="summary-row discount-row hidden" id="loyaltyDiscountRow">
+                    <span>Loyalty Savings Balance</span>
+                    <span id="loyaltyDiscountValue">-PKR 0</span>
+                </div>
+                <div class="summary-row delivery-row">
+                    <span>Estimated Service Delivery</span>
+                    <span>PKR 150</span>
+                </div>
+                <div class="summary-row total-row">
+                    <span>Total Amount due</span>
+                    <span id="cartGrandTotal">PKR 0</span>
+                </div>
+                <div class="loyalty-earning-notice" id="loyaltyEarningNotice">
+                    <i class="fa-solid fa-award"></i> You will earn <strong>0 loyalty points</strong> on this transaction.
+                </div>
+            </div>
+
+            <div class="checkout-form-container">
+                <h4><i class="fa-solid fa-truck-ramp-box"></i> Direct Order Validation</h4>
+                <form id="checkoutForm" class="checkout-form">
+                    <div class="form-group">
+                        <label for="custName">Full Name *</label>
+                        <input type="text" id="custName" required placeholder="e.g. Hammad Malik">
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="custPhone">Phone Number *</label>
+                            <input type="tel" id="custPhone" required placeholder="e.g. 03XXXXXXXXX">
+                        </div>
+                        <div class="form-group">
+                            <label for="custWhatsApp">WhatsApp Number *</label>
+                            <input type="tel" id="custWhatsApp" required placeholder="e.g. 03XXXXXXXXX">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="custEmail">Email Address</label>
+                        <input type="email" id="custEmail" placeholder="name@domain.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="custAddress">Full Drop-off Address *</label>
+                        <textarea id="custAddress" rows="2" required placeholder="House#, Street#, Sector/Area, Landmark"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="custCity">City / Destination Zone *</label>
+                            <select id="custCity" required>
+                                <option value="Lahore">Lahore</option>
+                                <option value="Islamabad">Islamabad</option>
+                                <option value="Karachi">Karachi</option>
+                                <option value="Rawalpindi">Rawalpindi</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="orderType">Order Fulfillment *</label>
+                            <select id="orderType" required>
+                                <option value="Home Delivery">Home Delivery</option>
+                                <option value="Take Away">Take Away</option>
+                                <option value="Dine In">Dine In</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="loyalty-redemption-module">
+                        <h5>Loyalty Points Redemption</h5>
+                        <div class="form-group checkbox-group">
+                            <input type="checkbox" id="redeemPointsCheckbox">
+                            <label for="redeemPointsCheckbox">Redeem points balance? (Min threshold: 100 pts)</label>
+                        </div>
+                        <input type="number" id="redeemPointsAmount" class="hidden-input" min="100" placeholder="Enter points amount to apply">
+                    </div>
+
+                    <div class="payment-method-group">
+                        <label class="section-label">Settlement Channel *</label>
+                        <div class="payment-grid">
+                            <label class="pay-card active">
+                                <input type="radio" name="paymentChannel" value="Cash on Delivery" checked>
+                                <i class="fa-solid fa-money-bill-wave"></i>
+                                <span>COD</span>
+                            </label>
+                            <label class="pay-card">
+                                <input type="radio" name="paymentChannel" value="Bank Transfer">
+                                <i class="fa-solid fa-university"></i>
+                                <span>Bank Xfer</span>
+                            </label>
+                            <label class="pay-card">
+                                <input type="radio" name="paymentChannel" value="Easypaisa">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <span>Easypaisa</span>
+                            </label>
+                            <label class="pay-card">
+                                <input type="radio" name="paymentChannel" value="JazzCash">
+                                <i class="fa-solid fa-wallet"></i>
+                                <span>JazzCash</span>
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="orderNotes">Custom Preparation Instructions</label>
+                        <textarea id="orderNotes" rows="2" placeholder="Spice tolerance adjustments, allergies, etc."></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary btn-block btn-lg" id="submitOrderBtn">
+                        <i class="fa-brands fa-whatsapp"></i> Dispatch Order to Verification
+                    </button>
+                    <button type="button" class="btn btn-outline btn-block" id="clearCartBtn">Reset Current Bag</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <section id="membership" class="membership-section">
+        <div class="section-header reveal">
+            <span class="section-subtitle">Exclusive Elite Network</span>
+            <h2 class="section-title">Touqas Privilege Membership</h2>
+            <div class="divider"></div>
+            <p class="section-desc">Unlock premium tiers, accumulate computational loyalty points, and secure lifetime operational savings.</p>
+        </div>
+
+        <div class="membership-grid reveal">
+            <div class="membership-card tier-silver">
+                <div class="tier-badge">Standard Tier</div>
+                <h3 class="tier-title">Silver Card</h3>
+                <div class="tier-price"><span class="currency">PKR</span>1,200<span class="duration">/Year</span></div>
+                <ul class="tier-perks">
+                    <li><i class="fa-solid fa-check-double"></i> <strong>5% Flat Discount</strong> on all digital orders</li>
+                    <li><i class="fa-solid fa-check-double"></i> 1x Loyalty Multiplying Base Point</li>
+                    <li><i class="fa-solid fa-check-double"></i> Special Birthday Offer (20% Discount Ticket)</li>
+                    <li class="muted-perk"><i class="fa-solid fa-ban"></i> Monthly Complementary Drink Allocations</li>
+                    <li class="muted-perk"><i class="fa-solid fa-ban"></i> VIP Priority Desk Reservation Queue</li>
+                </ul>
+                <a href="https://forms.gle/kYvsGN6gHzu9Yvcv9" target="_blank" rel="noopener noreferrer" class="btn btn-membership">Get Your Premium Card</a>
+            </div>
+
+            <div class="membership-card tier-gold featured">
+                <div class="popular-ribbon">Most Preferred Choice</div>
+                <div class="tier-badge">Advanced Tier</div>
+                <h3 class="tier-title">Gold Card</h3>
+                <div class="tier-price"><span class="currency">PKR</span>2,500<span class="duration">/Year</span></div>
+                <ul class="tier-perks">
+                    <li><i class="fa-solid fa-check-double"></i> <strong>5% Flat Discount</strong> on all digital orders</li>
+                    <li><i class="fa-solid fa-check-double"></i> 2x Loyalty Multiplying Base Points</li>
+                    <li><i class="fa-solid fa-check-double"></i> Recurring <strong>Monthly Free Drink</strong> Allocation</li>
+                    <li><i class="fa-solid fa-check-double"></i> Special Birthday Offer (30% Discount Ticket)</li>
+                    <li class="muted-perk"><i class="fa-solid fa-ban"></i> VIP Priority Desk Reservation Queue</li>
+                </ul>
+                <a href="https://forms.gle/kYvsGN6gHzu9Yvcv9" target="_blank" rel="noopener noreferrer" class="btn btn-membership">Get Your Premium Card</a>
+            </div>
+
+            <div class="membership-card tier-platinum">
+                <div class="tier-badge">Elite Privilege Tier</div>
+                <h3 class="tier-title">Platinum Card</h3>
+                <div class="tier-price"><span class="currency">PKR</span>4,000<span class="duration">/Year</span></div>
+                <ul class="tier-perks">
+                    <li><i class="fa-solid fa-check-double"></i> <strong>10% Flat Discount</strong> on all digital orders</li>
+                    <li><i class="fa-solid fa-check-double"></i> 3x Loyalty Multiplying Base Points</li>
+                    <li><i class="fa-solid fa-check-double"></i> Monthly Complementary <strong>Momos Plate</strong></li>
+                    <li><i class="fa-solid fa-check-double"></i> Monthly Free Cold Beverage Allowance</li>
+                    <li><i class="fa-solid fa-check-double"></i> Premium Birthday Voucher (40% Discount)</li>
+                    <li><i class="fa-solid fa-check-double"></i> <strong>VIP Priority Service Channel</strong> access</li>
+                </ul>
+                <a href="https://forms.gle/kYvsGN6gHzu9Yvcv9" target="_blank" rel="noopener noreferrer" class="btn btn-membership">Get Your Premium Card</a>
+            </div>
+        </div>
+
+        <div class="loyalty-rules-container reveal">
+            <h4 class="rules-header-title"><i class="fa-solid fa-calculator text-amber"></i> Loyalty Ecosystem Operations</h4>
+            <div class="rules-grid">
+                <div class="rule-box">
+                    <span class="rule-icon"><i class="fa-solid fa-coins"></i></span>
+                    <h5>Earn Velocity</h5>
+                    <p>Accrue 1 Loyalty Point automatically on spending cycles of every <strong>PKR 200</strong>.</p>
+                </div>
+                <div class="rule-box">
+                    <span class="rule-icon"><i class="fa-solid fa-scale-balanced"></i></span>
+                    <h5>Redemption Value</h5>
+                    <p>1 Loyalty Point computes directly to <strong>PKR 10</strong> liquid store credit valuation.</p>
+                </div>
+                <div class="rule-box">
+                    <span class="rule-icon"><i class="fa-solid fa-building-shield"></i></span>
+                    <h5>Minimum Threshold</h5>
+                    <p>Accounts must clear a minimum floor limit of <strong>100 points</strong> before applying credit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="reviews" class="reviews-section">
+        <div class="section-header reveal">
+            <span class="section-subtitle">Verified Testimonials</span>
+            <h2 class="section-title">Words From Our Patrons</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="reviews-grid reveal">
+            <div class="review-card">
+                <div class="review-rating">★★★★★</div>
+                <p class="review-text">"The Signature Steamed Momos are highly distinct. The texture of the casing is expertly structured, and the juice retention inside the meat is flawless. Highly recommended!"</p>
+                <div class="reviewer-meta">
+                    <div class="reviewer-avatar">ZK</div>
+                    <div>
+                        <h4 class="reviewer-name">Zainab Khan</h4>
+                        <span class="reviewer-status">Gold Circle Member</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-rating">★★★★★</div>
+                <p class="review-text">"The Injected Broast represents a significant structural shift in crispiness dynamics. Every fiber of the chicken holds profound spice penetration. Incredible speed on home delivery."</p>
+                <div class="reviewer-meta">
+                    <div class="reviewer-avatar">MA</div>
+                    <div>
+                        <h4 class="reviewer-name">Mustafa Ahmed</h4>
+                        <span class="reviewer-status">Platinum Circle Member</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="review-card">
+                <div class="review-rating">★★★★★</div>
+                <p class="review-text">"Their Double Beef Burger possesses phenomenal crusting profile on the flat-top grill. Pairing it with the Loaded Cheese Fries yields the perfect weekend treat."</p>
+                <div class="reviewer-meta">
+                    <div class="reviewer-avatar">SF</div>
+                    <div>
+                        <h4 class="reviewer-name">Shahzad Faisal</h4>
+                        <span class="reviewer-status">Verified Consumer</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="gallery" class="gallery-section">
+        <div class="section-header reveal">
+            <span class="section-subtitle">Visual Experience Showcase</span>
+            <h2 class="section-title">Glimpses of Touqas Kitchen</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="gallery-wrapper container-fluid reveal">
+            <div class="gallery-track" id="galleryTrack">
+                <div class="gallery-item">
+                    <img src="placeholder-gallery-1.jpg" alt="Steaming Hot Momos Setup">
+                    <div class="gallery-caption">Signature Dumplings In-Kitchen Preparation</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="placeholder-gallery-2.jpg" alt="Artisan Pizza Fire Crusting">
+                    <div class="gallery-caption">High Temperature Crust Bubble Control</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="placeholder-gallery-3.jpg" alt="Gourmet Burger Assembly Line">
+                    <div class="gallery-caption">Precision Layering Architecture</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="placeholder-gallery-4.jpg" alt="Deep Golden Fry Extrusions">
+                    <div class="gallery-caption">Injected Marinated Protein Bath</div>
+                </div>
+                <div class="gallery-item">
+                    <img src="placeholder-gallery-5.jpg" alt="Dine In Ambiance">
+                    <div class="gallery-caption">Modern Aesthetic Café Environment</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services" class="services-section">
+        <div class="section-header reveal">
+            <span class="section-subtitle">Operational Frameworks</span>
+            <h2 class="section-title">How We Serve You Best</h2>
+            <div class="divider"></div>
+        </div>
+
+        <div class="services-grid reveal">
+            <div class="service-box-card">
+                <div class="service-icon"><i class="fa-solid fa-utensils"></i></div>
+                <h3>Dine In Comfort</h3>
+                <p>Immerse yourself within an environment meticulously structured for premium socialization, clean presentation, and architectural warmth.</p>
+            </div>
+            <div class="service-box-card">
+                <div class="service-icon"><i class="fa-solid fa-bag-shopping"></i></div>
+                <h3>Swift Take Away</h3>
+                <p>Utilize optimized packaging that controls thermodynamics, preventing humidity logging and keeping structural crisps entirely intact.</p>
+            </div>
+            <div class="service-box-card">
+                <div class="service-icon"><i class="fa-solid fa-motorcycle"></i></div>
+                <h3>Home Delivery Logistics</h3>
+                <p>Leverage algorithmic dispatch solutions that monitor traffic paths, delivering high-vibrancy, scorching hot meals directly to your coordinate lines.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="story" class="story-mission-section">
+        <div class="story-container">
+            <div class="story-media-block reveal">
+                <img src="placeholder-brand-story.jpg" alt="Founding Kitchen Ethos" class="story-img">
+                <div class="experience-stamp-box">
+                    <span class="stamp-years">Est.</span>
+                    <span class="stamp-title">2026</span>
+                </div>
+            </div>
+            <div class="story-content-block reveal">
+                <span class="section-subtitle">The Corporate Heritage</span>
+                <h2 class="section-title">Crafting an Authentic Culinary Revolution</h2>
+                <div class="divider align-left"></div>
+                <p class="brand-narrative">
+                    TOUQAS FOODS arose out of a distinct vision to re-engineer fast comfort food dining. We realized that premium street food, local delicacies, and modern café culinary models could seamlessly combine if built upon an uncompromising base of hyper-fresh raw ingredients and operational discipline. 
+                </p>
+                <p class="brand-narrative">
+                    Our kitchens reject standard assembly-line corners. Every batch of momos is rolled by hand with calibrated wrap density; every burger patty is fresh, never chemically frozen; and our proprietary injection systems distribute deep-marinated flavors throughout the core muscle fibers of our broasts. We create experiences that respect the palette, cultivating true nutritional connection under our lifestyle guiding principle: <strong>“good food, great living”</strong>.
+                </p>
+
+                <div class="mission-sub-grid">
+                    <div class="mission-mini-card">
+                        <h5><i class="fa-solid fa-bullseye text-amber"></i> Core Corporate Mission</h5>
+                        <p>To deliver uncompromising, scientifically hygienic, high-vibrancy food products that blend gourmet excellence with structural affordability, transforming every singular meal into a memorable sensory connection.</p>
+                    </div>
+                    <div class="mission-mini-card">
+                        <h5><i class="fa-solid fa-heart-pulse text-amber"></i> Quality Assurance Mandate</h5>
+                        <p>Enforcing total structural trace validation across raw material inputs, cold chain infrastructure compliance, and state-of-the-art kitchen safety parameters to achieve perfect consistency.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="upcoming-projects" class="upcoming-section">
+        <div class="section-header reveal">
+            <span class="section-subtitle">Industrial Scale Expansion</span>
+            <h2 class="section-title">Future Expansion Frameworks</h2>
+            <div class="divider"></div>
+            <p class="section-desc">We are scaling our unique formulation systems beyond the hot-kitchen layout into broader consumer fast-moving verticals.</p>
+        </div>
+
+        <div class="upcoming-grid reveal">
+            <div class="project-card">
+                <div class="project-img-wrapper">
+                    <div class="project-status-badge">Future Launch</div>
+                    <img src="placeholder-proj-1.jpg" alt="Packaged Chips Design Line">
+                </div>
+                <div class="project-info">
+                    <h3>Gourmet Kettle Packaged Chips</h3>
+                    <p>Low-temperature cooked potato crisp arrays loaded with bespoke spice coatings, sealed in industrial nitrogen-barrier retail modules.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img-wrapper">
+                    <div class="project-status-badge">Future Launch</div>
+                    <img src="placeholder-proj-2.jpg" alt="Cryogenic Frozen Foods Array">
+                </div>
+                <div class="project-info">
+                    <h3>Cryogenic Frozen Retail Range</h3>
+                    <p>Bring the authentic hot-kitchen taste directly home. Flash-frozen signature momos, pizza sliders, and pre-marinated broast cuts ready for instant home air-frying.</p>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-img-wrapper">
+                    <div class="project-status-badge">Future Launch</div>
+                    <img src="placeholder-proj-3.jpg" alt="Artisan Beverage Cans">
+                </div>
+                <div class="project-info">
+                    <h3>Functional Botanicals & Craft Sodas</h3>
+                    <p>Bespoke carbonated infusions, premium cold coffees, and signature mint margaritas scaled into highly shelf-stable direct consumer cans.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="footer-component">
+        <div class="footer-top-wave"></div>
+        <div class="footer-container">
+            <div class="footer-grid">
+                
+                <div class="footer-col brand-col">
+                    <div class="footer-logo">
+                        <span class="f-logo-box">TF</span>
+                        <div>
+                            <h4>TOUQAS FOODS</h4>
+                            <p>good food, great living</p>
+                        </div>
+                    </div>
+                    <p class="footer-brand-statement">Architecting high-conversion culinary frameworks that marry the dynamic speed of fast-food structures with premium café precision.</p>
+                    <div class="registration-meta-box">
+                        <div><small><strong>FBR Reg Number:</strong> FBR-8392014-9</small></div>
+                        <div><small><strong>Trademark Code:</strong> TM-9201-TF</small></div>
+                    </div>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Internal Infrastructure</h4>
+                    <ul class="footer-links">
+                        <li><a href="#home">Home Base</a></li>
+                        <li><a href="#menu">Live Food Menu</a></li>
+                        <li><a href="#membership">Privilege Club</a></li>
+                        <li><a href="#reviews">Consumer Insights</a></li>
+                        <li><a href="#gallery">Media Gallery</a></li>
+                        <li><a href="#services">Logistical Channels</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Operational Hub Points</h4>
+                    <ul class="footer-contact-details">
+                        <li><i class="fa-solid fa-location-dot"></i> Block H-3, Johar Town, Near Emporium Core, Lahore, Pakistan.</li>
+                        <li><i class="fa-solid fa-phone"></i> 03079308372</li>
+                        <li><i class="fa-solid fa-envelope"></i> processing@touqasfoods.com</li>
+                        <li><i class="fa-solid fa-clock"></i> <strong>Mon - Sun:</strong> 12:00 PM - 02:00 AM</li>
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4 class="footer-heading">Digital Ecosystem Connect</h4>
+                    <p class="social-prompt">Track live formulation releases and active regional discount keys via our verified streams:</p>
+                    <div class="social-link-row">
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Facebook stream"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="Instagram stream"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="TikTok stream"><i class="fa-brands fa-tiktok"></i></a>
+                        <a href="https://wa.me/923079308372" target="_blank" rel="noopener noreferrer" class="social-icon-btn" aria-label="WhatsApp gateway Direct Line"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                    <div class="secure-badge">
+                        <i class="fa-solid fa-shield-halved"></i> SSL Encrypted Direct Checkout Channel
+                    </div>
+                </div>
+
+            </div>
+            
+            <div class="footer-bottom-bar">
+                <p class="copyright-line">&copy; 2026 Touqas Foods Network Corporate Ecosystem. All rights reserved structural operational frameworks.</p>
+                <div class="legal-inline-links">
+                    <a href="#" class="legal-link">Privacy Protection Protocol</a>
+                    <a href="#" class="legal-link">Terms of Service Manifest</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Return to Navigation Top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </button>
+
+</body>
+</html>
